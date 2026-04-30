@@ -2,29 +2,11 @@
 const today = new Date();
 ---
 
-<footer>
-	<div class="social-links">
-		<a href="https://www.instagram.com/beantown.bonsai" target="_blank">Instagram</a>
+<footer class="pb-24 px-4 text-center">
+	<div class="flex justify-center gap-4 mt-4">
+		<a href="https://www.instagram.com/beantown.bonsai" target="_blank" class="no-underline text-white hover:text-yellow-300" aria-label="Instagram">
+			<i class="fa-brands fa-instagram text-2xl"></i>
+		</a>
 	</div>
 	&copy; {today.getFullYear()} Beantown Bonsai. All rights reserved.
 </footer>
-<style>
-	footer {
-		padding: 2em 1em 6em 1em;
-		color: rgb(var(--color-white));
-		text-align: center;
-	}
-	.social-links {
-		display: flex;
-		justify-content: center;
-		gap: 1em;
-		margin-top: 1em;
-	}
-	.social-links a {
-		text-decoration: none;
-		color: rgb(var(--color-white));
-	}
-	.social-links a:hover {
-		color: rgb(var(--color-yellow-50));
-	}
-</style>
