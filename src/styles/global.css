@@ -9,14 +9,14 @@
 	--primary-color: var(--green-forest);
 	--secondary-color: var(--green-forest);
 	--accent: var(--green-forest);
-	--text-primary: var(--white);
-	--text-secondary: var(--green-forest);
+	--text-primary: var(--cream);
+	--text-secondary: var();
 }
 
 body {
-	background-color: var(--black);
+	background-color: var(--primary-color);
 }
 
 main {
-	color: var(--white);
+	color: var(--text-primary);
 }
