@@ -1,17 +1,18 @@
 @import "tailwindcss";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
-:root {
-	--black: rgba(27, 30, 36, 1);
-	--white: #ffffffff;
-	--green-forest:  #2E6F40;
-	--clay: #B7410E;
-	--cream: #dccaa4;
-	--primary-color: var(--green-forest);
-	--secondary-color: var(--green-forest);
-	--accent: var(--green-forest);
-	--text-primary: var(--cream);
-	--text-secondary: var();
+@layer base {
+	:root {
+		--black: rgba(27, 30, 36, 1);
+		--white: #ffffffff;
+		--green-forest: #2E6F40;
+		--clay: #B7410E;
+		--cream: #dccaa4;
+		--primary-color: var(--green-forest);
+		--secondary-color: var(--green-forest);
+		--accent: var(--green-forest);
+		--text-primary: var(--cream);
+	}
 }
 
 body {
