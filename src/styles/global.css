@@ -6,11 +6,12 @@
 		--black: rgba(27, 30, 36, 1);
 		--white: #ffffffff;
 		--green-forest: #2E6F40;
+		--dark-green-forest: #1e2e1a;
 		--clay: #B7410E;
 		--cream: #dccaa4;
-		--primary-color: var(--green-forest);
-		--secondary-color: var(--green-forest);
-		--accent: var(--green-forest);
+		--primary-color: var(--dark-green-forest);
+		--secondary-color: var(--dark-green-forest);
+		--accent: var(--dark-green-forest);
 		--text-primary: var(--cream);
 	}
 }
