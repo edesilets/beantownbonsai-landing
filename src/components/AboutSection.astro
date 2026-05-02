@@ -1,0 +1,30 @@
+---
+import { stats } from '../data/bonsai.json';
+---
+
+<div class="m-section m-about" id="m-about">
+  <div class="m-about-img m-reveal">
+    <div class="m-about-img-inner">
+      <svg width="44" height="44" viewBox="0 0 52 52" fill="none">
+        <rect x="22" y="30" width="8" height="14" rx="1" fill="rgba(122,158,110,0.25)"/>
+        <ellipse cx="26" cy="22" rx="14" ry="12" fill="rgba(122,158,110,0.2)"/>
+        <ellipse cx="17" cy="17" rx="8" ry="7" fill="rgba(122,158,110,0.15)"/>
+        <ellipse cx="35" cy="17" rx="8" ry="7" fill="rgba(122,158,110,0.15)"/>
+      </svg>
+      <span class="m-about-img-label">Portrait — artisan at work</span>
+    </div>
+    <div class="m-about-year">2008</div>
+  </div>
+  <p class="m-section-eyebrow m-reveal">Our Story</p>
+  <h2 class="m-section-title m-reveal m-reveal-d1">Rooted in <em>craft,</em> grown in Boston.</h2>
+  <p class="m-about-body m-reveal m-reveal-d2">Founded in the Fenway neighborhood in 2008, Beantown Bonsai began as a weekend passion and grew into New England&apos;s most beloved source for living art. Every tree in our collection has been trained by hand.</p>
+  <p class="m-about-body m-reveal m-reveal-d2">We believe bonsai is a practice of presence. Whether you&apos;re a first-time grower or a serious collector, we&apos;re here to help you find a tree that speaks to you.</p>
+  <div class="m-stats m-reveal m-reveal-d3">
+    {stats.map((s) => (
+      <div class="m-stat">
+        <div class="m-stat-number">{s.number}</div>
+        <div class="m-stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+</div>

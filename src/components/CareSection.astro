@@ -1,0 +1,34 @@
+---
+import { careItems } from '../data/bonsai.json';
+---
+
+<div class="m-section m-care" id="m-care">
+  <p class="m-section-eyebrow m-reveal">Care & Knowledge</p>
+  <h2 class="m-section-title m-reveal m-reveal-d1">Everything your tree needs to <em>thrive.</em></h2>
+  <div class="m-care-cards m-reveal m-reveal-d2">
+    {careItems.map((c, i) => (
+      <div class="m-care-card" data-care-index={i}>
+        <div class="m-care-icon">{c.icon}</div>
+        <div class="m-care-body-wrap">
+          <div class="m-care-title">{c.title}</div>
+          <div class="m-care-desc">{c.desc}</div>
+        </div>
+        <div class="m-care-chevron">
+          <svg width="8" height="13" viewBox="0 0 8 13" fill="none">
+            <path d="M1 1l6 5.5L1 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('.m-care-card').forEach((card) => {
+    card.addEventListener('click', () => {
+      const isActive = card.classList.contains('active');
+      document.querySelectorAll('.m-care-card').forEach((c) => c.classList.remove('active'));
+      if (!isActive) card.classList.add('active');
+    });
+  });
+</script>

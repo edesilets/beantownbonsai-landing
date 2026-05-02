@@ -1,0 +1,20 @@
+---
+---
+
+<nav class="m-nav">
+  <span class="m-nav-logo">Beantown <span>Bonsai</span></span>
+  <button class="m-hamburger" id="m-hamburger" aria-label="Menu">
+    <div class="m-hamburger-line"></div>
+    <div class="m-hamburger-line"></div>
+    <div class="m-hamburger-line"></div>
+  </button>
+</nav>
+
+<script>
+  document.getElementById('m-hamburger')?.addEventListener('click', () => {
+    const drawer = document.getElementById('m-drawer');
+    const hamburger = document.getElementById('m-hamburger');
+    drawer?.classList.toggle('open');
+    hamburger?.classList.toggle('open');
+  });
+</script>

@@ -1,0 +1,30 @@
+---
+import { products } from '../data/bonsai.json';
+---
+
+<div class="m-section m-products" id="m-shop">
+  <p class="m-section-eyebrow m-reveal">Featured Collection</p>
+  <h2 class="m-section-title m-reveal m-reveal-d1">Each tree, a <em>lifetime</em> of patience.</h2>
+  <div class="m-products-scroll m-reveal m-reveal-d2">
+    {products.map((p) => (
+      <div class="m-product-card">
+        <div class="m-product-img">
+          <div class="m-product-img-inner">
+            <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
+              <rect x="20" y="28" width="8" height="12" rx="1" fill="rgba(30,46,26,0.2)"/>
+              <ellipse cx="24" cy="20" rx="12" ry="10" fill="rgba(30,46,26,0.15)"/>
+            </svg>
+            <span style="font-family:monospace;font-size:8px;letter-spacing:0.1em;color:rgba(30,46,26,0.3)">product photo</span>
+          </div>
+          {p.badge && <div class="m-product-badge">{p.badge}</div>}
+        </div>
+        <div class="m-product-info">
+          <div class="m-product-name">{p.name}</div>
+          <div class="m-product-species">{p.species}</div>
+          <div class="m-product-price">{p.price}</div>
+        </div>
+      </div>
+    ))}
+  </div>
+  <a href="#" class="m-view-all m-reveal m-reveal-d3">View all specimens →</a>
+</div>

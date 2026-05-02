@@ -1,0 +1,41 @@
+---
+---
+
+<div class="m-drawer" id="m-drawer">
+  <div class="m-drawer-backdrop" id="m-drawer-backdrop"></div>
+  <div class="m-drawer-panel">
+    <button class="m-drawer-close" id="m-drawer-close" aria-label="Close menu">✕</button>
+    <div class="m-drawer-logo">Beantown <span>Bonsai</span></div>
+    <ul class="m-drawer-links">
+      <li><a href="#m-shop"     class="m-drawer-nav-link">Shop</a></li>
+      <li><a href="#m-about"    class="m-drawer-nav-link">About</a></li>
+      <li><a href="#m-care"     class="m-drawer-nav-link">Care</a></li>
+      <li><a href="#m-newsletter" class="m-drawer-nav-link">Newsletter</a></li>
+    </ul>
+    <div class="m-drawer-footer">84 Peterborough St, Boston MA</div>
+  </div>
+</div>
+
+<script>
+  function closeDrawer() {
+    const drawer = document.getElementById('m-drawer');
+    const hamburger = document.querySelector('.m-hamburger');
+    drawer?.classList.remove('open');
+    hamburger?.classList.remove('open');
+  }
+
+  document.getElementById('m-drawer-backdrop')?.addEventListener('click', closeDrawer);
+  document.getElementById('m-drawer-close')?.addEventListener('click', closeDrawer);
+
+  document.querySelectorAll('.m-drawer-nav-link').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const href = (link as HTMLAnchorElement).getAttribute('href');
+      closeDrawer();
+      if (href) {
+        const target = document.querySelector(href);
+        target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>

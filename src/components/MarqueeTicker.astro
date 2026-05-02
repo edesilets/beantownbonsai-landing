@@ -1,0 +1,13 @@
+---
+import { marqueeItems } from '../data/bonsai.json';
+
+const doubled = [...marqueeItems, ...marqueeItems];
+---
+
+<div class="m-marquee">
+  <div class="m-marquee-inner">
+    {doubled.map((item) => (
+      <span class="m-marquee-item">{item} <span class="m-marquee-dot">·</span> </span>
+    ))}
+  </div>
+</div>
