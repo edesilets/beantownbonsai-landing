@@ -1,9 +1,6 @@
 {
   "products": [
-    { "name": "Juniper Shimpaku", "species": "Juniperus chinensis",  "price": "$285", "badge": "New Arrival" },
-    { "name": "Japanese Maple",   "species": "Acer palmatum",        "price": "$420", "badge": null },
-    { "name": "Trident Maple",    "species": "Acer buergerianum",    "price": "$680", "badge": "Collector" },
-    { "name": "Starter Juniper",  "species": "Beginner set",         "price": "$89",  "badge": null }
+    { "name": "Goldcrest", "species": "Hesperocyparis Macrocarpa",  "price": "$65-$130", "badge": "New species" }
   ],
   "careItems": [
     { "icon": "☀", "title": "Light & Placement",  "desc": "Understanding your tree's relationship with light is the foundation of good bonsai care. Most species thrive with bright, indirect outdoor exposure." },
@@ -23,8 +20,8 @@
     "Starter Sets"
   ],
   "stats": [
-    { "number": "18",   "label": "Years cultivating" },
-    { "number": "400+", "label": "Specimens homed" },
-    { "number": "60+",  "label": "Trees placed" }
+    { "number": "5",   "label": "Years cultivating" },
+    { "number": "50+", "label": "Specimens homed" },
+    { "number": "5+",  "label": "Trees placed" }
   ]
 }
