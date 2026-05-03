@@ -1,5 +1,6 @@
 ---
 import { products } from '../data/bonsai.json';
+import { Image } from "astro:assets";
 ---
 
 <div class="m-section m-products" id="m-shop">
@@ -10,7 +11,7 @@ import { products } from '../data/bonsai.json';
       <div class="m-product-card">
         <div class="m-product-img">
           <div class="m-product-img-inner">
-            <image src={p.image_path}></image>
+            <Image src={p.image_path} alt="Bonsai Tree" width={400} height={300} />
             {/* <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
               <rect x="20" y="28" width="8" height="12" rx="1" fill="rgba(30,46,26,0.2)"/>
               <ellipse cx="24" cy="20" rx="12" ry="10" fill="rgba(30,46,26,0.15)"/>

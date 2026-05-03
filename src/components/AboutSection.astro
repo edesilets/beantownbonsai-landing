@@ -1,11 +1,13 @@
 ---
+import { Image } from "astro:assets";
+import aboutImg from "../../public/images/thing.jpg";
 import { stats } from '../data/bonsai.json';
 ---
 
 <div class="m-section m-about" id="m-about">
   <div class="m-about-img m-reveal">
     <div class="m-about-img-inner">
-      <image src="./images/thing.jpg"></image>
+      <Image src={aboutImg} alt="Portrait — artisan at work" />
       <!-- <svg width="44" height="44" viewBox="0 0 52 52" fill="none">
         <rect x="22" y="30" width="8" height="14" rx="1" fill="rgba(122,158,110,0.25)"/>
         <ellipse cx="26" cy="22" rx="14" ry="12" fill="rgba(122,158,110,0.2)"/>

@@ -1,10 +1,12 @@
 ---
+import { Image } from "astro:assets";
+import heroImg from "../../public/images/thing.jpg";
 ---
 
 <div class="m-hero" id="m-home">
   <div class="m-hero-bg">
     <div class="m-hero-img">
-      <image src="/images/thing.jpg"></image>
+      <Image src={heroImg} alt="Bonsai hero photo" />
       <!-- <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
         <rect x="20" y="28" width="8" height="12" rx="1" fill="rgba(122,158,110,0.2)"/>
         <ellipse cx="24" cy="22" rx="14" ry="12" fill="rgba(122,158,110,0.15)"/>
