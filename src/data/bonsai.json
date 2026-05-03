@@ -1,6 +1,8 @@
 {
   "products": [
-    { "name": "Goldcrest", "species": "Hesperocyparis Macrocarpa",  "price": "$65-$130", "badge": "New Arrival" }
+    { "name": "Goldcrest", "species": "Hesperocyparis Macrocarpa",  "price": "$65-$130", "badge": "New Arrival", "image_path": "/images/golden.jpg" },
+    { "name": "Larch", "species": null,  "price": "$350", "badge": null, "image_path": "/images/larch.jpg" },
+    { "name": null, "species": null,  "price": "$350", "badge": null, "image_path": "/images/thing.jpg" }
   ],
   "careItems": [
     { "icon": "☀", "title": "Light & Placement",  "desc": "Understanding your tree's relationship with light is the foundation of good bonsai care. Most species thrive with bright, indirect outdoor exposure." },
